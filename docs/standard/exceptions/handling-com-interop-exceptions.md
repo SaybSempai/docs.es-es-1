@@ -28,7 +28,7 @@ El código administrado y el código no administrado pueden trabajar juntos para
 ## <a name="working-with-ierrorinfo"></a>Trabajar con IErrorInfo  
  Cuando se pasa un error desde COM al código administrado, el tiempo de ejecución rellena el objeto de excepción con la información del error. Los objetos COM que admiten IErrorInfo y devuelven HRESULTS proporcionan esta información a las excepciones de código administrado. Por ejemplo, el tiempo de ejecución asigna la descripción del error COM a la propiedad <xref:System.Exception.Message%2A> de la excepción. Si el valor HRESULT no proporciona ninguna información de error adicional, el tiempo de ejecución rellena muchas de las propiedades de la excepción con los valores predeterminados.  
   
- Si un método produce un error en código no administrado, se puede pasar una excepción a un segmento de código administrado. El tema [HRESULT y excepciones](../../../docs/framework/interop/how-to-map-hresults-and-exceptions.md) contiene una tabla que muestra cómo se asignan los HRESULTS a los objetos de excepción en tiempo de ejecución.  
+ Si un método produce un error en código no administrado, se puede pasar una excepción a un segmento de código administrado. El tema [HRESULT y excepciones](../../../docs/framework/interop/how-to-map-hresults-and-exceptions.md) contienen una tabla que muestra cómo se asignan los HRESULTS a los objetos de excepción en tiempo de ejecución.  
 
 ## <a name="see-also"></a>Vea también
 
